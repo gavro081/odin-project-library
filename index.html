@@ -8,20 +8,32 @@
 </head>
 <body>
 <h1 class="main-title">JavaScript Library</h1>
-<div class="books-container">
-    <div class="book-card">
-        <h2>Harry Potter</h2>
-        <h3>J.K. Rowling</h3>
-        <p>350 pages</p>
-        <p>haveread</p>
-    </div>
-    <div class="book-card">
-        <h2>Harry Potter</h2>
-        <h3>J.K. Rowling</h3>
-        <p>350 pages</p>
-        <p>haveread</p>
-    </div>
-</div>
+<button class="new-book">new book</button>
+<form action="">
+    <label for="book-name">
+        <span>book name</span>
+        <input title="book-name" type="text" required>
+    </label>
+    <label for="author">
+        <span>author</span>
+        <input title="author" required>
+    </label>
+    <label for="num-pages">
+        <span>pages</span>
+        <input type="number" title="num-pages" required>
+    </label>    
+    <label for="have-read">
+        <span>have you read the book?</span>
+        <input title="have-read" type="checkbox">
+    </label>
+    <button class="submit-btn">
+        <span>Submit</span>
+    </button>
+</form>
+<div class="books-container"></div>
+<button class="cancel-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>close</title><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+</button>
 <script src="script.js"></script>
 </body>
 </html>
